@@ -5,7 +5,13 @@ def sum arr
 end
 # Part II
 def max_2_sum arr
-  # YOUR CODE HERE
+  if arr.length >= 2
+    arr.max(2).reduce(:+)
+  elsif arr.length == 1
+    arr[0]
+  else
+    0
+  end
 end
 
 # Part III
